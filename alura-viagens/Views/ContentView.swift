@@ -10,24 +10,20 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @Environment(\.horizontalSizeClass) var horizontalSizeClass
-
     var body: some View {
-
-        NavigationView {
-            GeometryReader { view in
-                VStack {
-                    HeaderView()
-                        .frame(width: view.size.width, height: self.horizontalSizeClass == .compact ? 200 : 310, alignment: .top)
-                    List(viagens) { viagem in
-                        NavigationLink(destination: MapaView(coordenada: viagem.localizacao).navigationBarTitle("Localização")) {
-                            CelulaViagemView(viagem: viagem)
-                        }
-                    }.navigationBarTitle("")
+        TabView {
+            DestaquesView()
+                .tabItem {
+                    Text("Destaques")
+                    Image("icone-destaques")
                 }
-            }
-            .edgesIgnoringSafeArea(.all)
-        }.navigationViewStyle(StackNavigationViewStyle())
+
+            ListaDePacotesView()
+                .tabItem {
+                    Text("Pacotes")
+                    Image("icone-mala")
+                }
+        }
     }
 }
 

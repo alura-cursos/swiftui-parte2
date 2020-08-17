@@ -17,6 +17,8 @@
 		03833C5723E8544D003DEF66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03833C5623E8544D003DEF66 /* Assets.xcassets */; };
 		03833C5A23E8544D003DEF66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03833C5923E8544D003DEF66 /* Preview Assets.xcassets */; };
 		03833C5D23E8544D003DEF66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03833C5B23E8544D003DEF66 /* LaunchScreen.storyboard */; };
+		03C6D69124D72823001919D1 /* DetalhesViagemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C6D69024D72823001919D1 /* DetalhesViagemView.swift */; };
+		03CECA4C24D5F7F70052AB34 /* DestaquesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CECA4B24D5F7F70052AB34 /* DestaquesView.swift */; };
 		03D1184A24C0C239002BAF65 /* PacotesViagensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D1184924C0C239002BAF65 /* PacotesViagensView.swift */; };
 		03D1185624C0D184002BAF65 /* pacotes-viagens.json in Resources */ = {isa = PBXBuildFile; fileRef = 03D1185524C0D184002BAF65 /* pacotes-viagens.json */; };
 		03D1185924C0D1B9002BAF65 /* PacoteDeViagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D1185824C0D1B9002BAF65 /* PacoteDeViagem.swift */; };
@@ -39,6 +41,8 @@
 		03833C5923E8544D003DEF66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		03833C5C23E8544D003DEF66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03833C5E23E8544D003DEF66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03C6D69024D72823001919D1 /* DetalhesViagemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViagemView.swift; sourceTree = "<group>"; };
+		03CECA4B24D5F7F70052AB34 /* DestaquesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestaquesView.swift; sourceTree = "<group>"; };
 		03D1184924C0C239002BAF65 /* PacotesViagensView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacotesViagensView.swift; sourceTree = "<group>"; };
 		03D1185524C0D184002BAF65 /* pacotes-viagens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pacotes-viagens.json"; sourceTree = "<group>"; };
 		03D1185824C0D1B9002BAF65 /* PacoteDeViagem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacoteDeViagem.swift; sourceTree = "<group>"; };
@@ -99,6 +103,35 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		03C6D68F24D727FF001919D1 /* Detalhes */ = {
+			isa = PBXGroup;
+			children = (
+				03C6D69024D72823001919D1 /* DetalhesViagemView.swift */,
+			);
+			path = Detalhes;
+			sourceTree = "<group>";
+		};
+		03CECA4924D5F7500052AB34 /* Destaques */ = {
+			isa = PBXGroup;
+			children = (
+				03CECA4B24D5F7F70052AB34 /* DestaquesView.swift */,
+				03D805A223F3A56D00CC9E79 /* HeaderView.swift */,
+				033D9EE123FC359900540AFE /* CelulaViagemView.swift */,
+				03496B9D23FCD40D00E5AC0B /* MapaView.swift */,
+			);
+			path = Destaques;
+			sourceTree = "<group>";
+		};
+		03CECA4A24D5F77F0052AB34 /* Pacotes */ = {
+			isa = PBXGroup;
+			children = (
+				03D1184924C0C239002BAF65 /* PacotesViagensView.swift */,
+				032C898B24CDF458004273A4 /* SecaoPacotesView.swift */,
+				034BBA2D24CE4A370014C9B4 /* ListaDePacotesView.swift */,
+			);
+			path = Pacotes;
+			sourceTree = "<group>";
+		};
 		03D1185724C0D19D002BAF65 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,12 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				03833C5423E8544B003DEF66 /* ContentView.swift */,
-				03D805A223F3A56D00CC9E79 /* HeaderView.swift */,
-				033D9EE123FC359900540AFE /* CelulaViagemView.swift */,
-				03496B9D23FCD40D00E5AC0B /* MapaView.swift */,
-				03D1184924C0C239002BAF65 /* PacotesViagensView.swift */,
-				032C898B24CDF458004273A4 /* SecaoPacotesView.swift */,
-				034BBA2D24CE4A370014C9B4 /* ListaDePacotesView.swift */,
+				03CECA4924D5F7500052AB34 /* Destaques */,
+				03CECA4A24D5F77F0052AB34 /* Pacotes */,
+				03C6D68F24D727FF001919D1 /* Detalhes */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +239,7 @@
 				03D805A323F3A56D00CC9E79 /* HeaderView.swift in Sources */,
 				032C898C24CDF458004273A4 /* SecaoPacotesView.swift in Sources */,
 				03D8059C23F395FA00CC9E79 /* Dados.swift in Sources */,
+				03CECA4C24D5F7F70052AB34 /* DestaquesView.swift in Sources */,
 				03D1184A24C0C239002BAF65 /* PacotesViagensView.swift in Sources */,
 				03496B9E23FCD40D00E5AC0B /* MapaView.swift in Sources */,
 				03D1185924C0D1B9002BAF65 /* PacoteDeViagem.swift in Sources */,
@@ -217,6 +248,7 @@
 				03833C5523E8544B003DEF66 /* ContentView.swift in Sources */,
 				03D8059D23F395FA00CC9E79 /* Viagem.swift in Sources */,
 				034BBA2E24CE4A370014C9B4 /* ListaDePacotesView.swift in Sources */,
+				03C6D69124D72823001919D1 /* DetalhesViagemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

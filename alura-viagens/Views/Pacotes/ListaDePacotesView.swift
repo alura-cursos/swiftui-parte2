@@ -16,12 +16,6 @@ struct ListaDePacotesView: View {
         Dictionary(grouping: pacotesDeViagens, by: { $0.categoria.rawValue })
     }
 
-    init() {
-        UITableView.appearance().separatorStyle = .none
-        UITableViewCell.appearance().backgroundColor = UIColor(red: 247.0/255, green: 247.0/255, blue: 247.0/255, alpha: 1)
-        UINavigationBar.appearance().backgroundColor = UIColor(red: 247.0/255, green: 247.0/255, blue: 247.0/255, alpha: 1)
-    }
-
     var body: some View {
         NavigationView {
             List {
@@ -32,8 +26,20 @@ struct ListaDePacotesView: View {
             .navigationBarTitle("Pacotes")
             .padding(.leading, -10)
             .padding(.trailing, -10)
+
+            .onAppear {
+                UITableView.appearance().separatorStyle = .none
+                UITableView.appearance().backgroundColor = UIColor(red: 247.0/255, green: 247.0/255, blue: 247.0/255, alpha: 1)
+                UITableViewCell.appearance().backgroundColor = UIColor(red: 247.0/255, green: 247.0/255, blue: 247.0/255, alpha: 1)
+                UINavigationBar.appearance().backgroundColor = UIColor(red: 247.0/255, green: 247.0/255, blue: 247.0/255, alpha: 1)
+            }
+            .onDisappear {
+                UITableView.appearance().separatorStyle = .singleLine
+                UITableView.appearance().backgroundColor = nil
+                UITableViewCell.appearance().backgroundColor = nil
+                UINavigationBar.appearance().backgroundColor = nil
+            }
         }
-        .edgesIgnoringSafeArea(.top)
     }
 }
 
