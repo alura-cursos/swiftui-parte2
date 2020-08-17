@@ -43,11 +43,14 @@ struct PacotesViagensView: View {
             }
         }
         .frame(width: 180, height: 250)
+        .shadow(radius: 5, x: 1, y: 1)
+        .border(Color(red: 221.0/255.0, green: 221.0/255.0, blue: 221.0/255.0))
     }
 }
 
 struct PacotesViagensView_Previews: PreviewProvider {
     static var previews: some View {
         PacotesViagensView()
+            .previewLayout(.fixed(width: 180, height: 250))
     }
 }

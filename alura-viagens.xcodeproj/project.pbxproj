@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032C898C24CDF458004273A4 /* SecaoPacotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032C898B24CDF458004273A4 /* SecaoPacotesView.swift */; };
 		033D9EE223FC359900540AFE /* CelulaViagemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D9EE123FC359900540AFE /* CelulaViagemView.swift */; };
 		03496B9E23FCD40D00E5AC0B /* MapaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03496B9D23FCD40D00E5AC0B /* MapaView.swift */; };
 		03833C5123E8544B003DEF66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03833C5023E8544B003DEF66 /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		032C898B24CDF458004273A4 /* SecaoPacotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecaoPacotesView.swift; sourceTree = "<group>"; };
 		033D9EE123FC359900540AFE /* CelulaViagemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelulaViagemView.swift; sourceTree = "<group>"; };
 		03496B9D23FCD40D00E5AC0B /* MapaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaView.swift; sourceTree = "<group>"; };
 		03833C4D23E8544B003DEF66 /* alura-viagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "alura-viagens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 				033D9EE123FC359900540AFE /* CelulaViagemView.swift */,
 				03496B9D23FCD40D00E5AC0B /* MapaView.swift */,
 				03D1184924C0C239002BAF65 /* PacotesViagensView.swift */,
+				032C898B24CDF458004273A4 /* SecaoPacotesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			files = (
 				03833C5123E8544B003DEF66 /* AppDelegate.swift in Sources */,
 				03D805A323F3A56D00CC9E79 /* HeaderView.swift in Sources */,
+				032C898C24CDF458004273A4 /* SecaoPacotesView.swift in Sources */,
 				03D8059C23F395FA00CC9E79 /* Dados.swift in Sources */,
 				03D1184A24C0C239002BAF65 /* PacotesViagensView.swift in Sources */,
 				03496B9E23FCD40D00E5AC0B /* MapaView.swift in Sources */,
