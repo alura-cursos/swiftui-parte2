@@ -15,14 +15,31 @@ struct DetalhesViagemView: View {
     var pacoteDeViagem: PacoteDeViagem
     var corDaFonte = Color(red: 77.0/255.0, green: 77.0/255.0, blue: 77.0/255.0)
 
+    @Environment(\.presentationMode) var presentationMode
+
     var body: some View {
         GeometryReader { view in
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
-                    Image(self.pacoteDeViagem.imagens[0])
-                        .resizable()
-                        .frame(height: 200)
+                    ZStack(alignment: .top) {
+                        Image(self.pacoteDeViagem.imagens[0])
+                            .resizable()
+                            .frame(height: 200)
 
+                        Button(action: {
+                            self.presentationMode.wrappedValue.dismiss()
+                        }) {
+                            Image("icone-voltar")
+                                .resizable()
+                                .renderingMode(Image.TemplateRenderingMode.original)
+                                .frame(width: 15, height: 25, alignment: .leading)
+                                .padding(.leading, 15)
+                                .padding(.top, 15)
+                        }
+                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    }
+                }
+                VStack {
                     Text(self.pacoteDeViagem.titulo.uppercased())
                         .font(.custom("Avenir Black", size: 26))
                         .foregroundColor(self.corDaFonte)
@@ -68,6 +85,8 @@ struct DetalhesViagemView: View {
                         }
                     }
 
+                    Divider()
+
                     VStack {
                         Text("O que está incluso")
                             .font(.custom("Avenir", size: 20))
@@ -98,11 +117,14 @@ struct DetalhesViagemView: View {
                     }
                     .padding(.leading, 40)
                     .padding(.trailing, 40)
+
+                    Divider()
                 }
                 .padding(.leading, 20)
                 .padding(.trailing, 20)
             }
         }
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
