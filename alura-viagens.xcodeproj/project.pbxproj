@@ -10,6 +10,7 @@
 		032C898C24CDF458004273A4 /* SecaoPacotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032C898B24CDF458004273A4 /* SecaoPacotesView.swift */; };
 		033D9EE223FC359900540AFE /* CelulaViagemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D9EE123FC359900540AFE /* CelulaViagemView.swift */; };
 		03496B9E23FCD40D00E5AC0B /* MapaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03496B9D23FCD40D00E5AC0B /* MapaView.swift */; };
+		034BBA2E24CE4A370014C9B4 /* ListaDePacotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034BBA2D24CE4A370014C9B4 /* ListaDePacotesView.swift */; };
 		03833C5123E8544B003DEF66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03833C5023E8544B003DEF66 /* AppDelegate.swift */; };
 		03833C5323E8544B003DEF66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03833C5223E8544B003DEF66 /* SceneDelegate.swift */; };
 		03833C5523E8544B003DEF66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03833C5423E8544B003DEF66 /* ContentView.swift */; };
@@ -29,6 +30,7 @@
 		032C898B24CDF458004273A4 /* SecaoPacotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecaoPacotesView.swift; sourceTree = "<group>"; };
 		033D9EE123FC359900540AFE /* CelulaViagemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelulaViagemView.swift; sourceTree = "<group>"; };
 		03496B9D23FCD40D00E5AC0B /* MapaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaView.swift; sourceTree = "<group>"; };
+		034BBA2D24CE4A370014C9B4 /* ListaDePacotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDePacotesView.swift; sourceTree = "<group>"; };
 		03833C4D23E8544B003DEF66 /* alura-viagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "alura-viagens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03833C5023E8544B003DEF66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03833C5223E8544B003DEF66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				03496B9D23FCD40D00E5AC0B /* MapaView.swift */,
 				03D1184924C0C239002BAF65 /* PacotesViagensView.swift */,
 				032C898B24CDF458004273A4 /* SecaoPacotesView.swift */,
+				034BBA2D24CE4A370014C9B4 /* ListaDePacotesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				03833C5323E8544B003DEF66 /* SceneDelegate.swift in Sources */,
 				03833C5523E8544B003DEF66 /* ContentView.swift in Sources */,
 				03D8059D23F395FA00CC9E79 /* Viagem.swift in Sources */,
+				034BBA2E24CE4A370014C9B4 /* ListaDePacotesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
