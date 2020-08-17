@@ -27,7 +27,13 @@ struct SecaoPacotesView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(self.pacotes) { pacote in
-                        PacotesViagensView(pacoteDeViagem: pacote)
+                        NavigationLink(destination: DetalhesViagemView(pacoteDeViagem: pacote)
+                            .navigationBarTitle("")
+                            .navigationBarHidden(true)
+                        ) {
+                            PacotesViagensView(pacoteDeViagem: pacote)
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
             }
