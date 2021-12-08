@@ -1,4 +1,4 @@
-![Thumbnail GitHub](https://github.com/giovannamoeller/readme-templates/blob/main/thumbnail-iOS%20-%20SwiftUI.png?raw=true)
+![Thumbnail GitHub](https://user-images.githubusercontent.com/47362960/145264976-80d2fa72-3212-4606-9be4-e61aabf64391.png)
 
 # Alura Viagens
 
@@ -10,7 +10,7 @@ A Alura Viagens é a simulação de um aplicativo de viagens para o sistema oper
 - Ordenar os pacotes de viagens por categorias.
 - Mostrar os detalhes de determinado pacote de viagem.
 
-![Gif mostrando o aplicativo em execução](https://github.com/giovannamoeller/readme-templates/blob/main/swiftui-parte2.gif?raw=true)
+![Gif mostrando o aplicativo em execução](https://user-images.githubusercontent.com/47362960/145264956-ef54ee94-2527-4c65-a91f-b4231b4bcb4c.gif)
 
 ## ✔️ Técnicas e tecnologias
 
